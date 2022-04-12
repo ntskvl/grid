@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+
+.app{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "rosa azul-claro verde"
+    "azul-escuro azul-claro verde"
+    "vermelho vermelho vermelho";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 6px;
+}
+
+.rosa{
+    grid-area: rosa;
+    border-radius: 12px;
+    background-color: rgb(255, 0, 212);
+}
+
+.azul-escuro{
+    grid-area: azul-escuro;
+    border-radius: 12px;
+    background-color: blue;
+}
+
+.azul-claro{
+    grid-area: azul-claro;
+    border-radius: 12px;
+    background-color: rgb(146, 146, 255);
+}
+
+.verde{
+    grid-area: verde;
+    border-radius: 12px;
+    background-color: green;
+
+}
+
+.vermelho{
+    grid-area: vermelho;
+    border-radius: 12px;
+    background-color: red;
+}
